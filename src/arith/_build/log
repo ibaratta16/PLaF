@@ -1,0 +1,33 @@
+# dune utop
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Shared cache location: /Users/isabellabaratta/.cache/dune/db
+# Workspace root:
+# "/Users/isabellabaratta/Library/CloudStorage/OneDrive-Personal/Sophmore
+# Spring/CS 496/PLaF/src/arith"
+# Auto-detected concurrency: 8
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; installed_env =
+#      map
+#        { "INSIDE_DUNE" :
+#            "/Users/isabellabaratta/Library/CloudStorage/OneDrive-Personal/Sophmore Spring/CS 496/PLaF/src/arith/_build/default"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; instrument_with = []
+#  }
+$ /Users/isabellabaratta/.opam/default/bin/ocamlc.opt -config > /var/folders/hk/t19lmpj128sgqydl_p0lx3f00000gn/T/dune_7f0757_output
+$ (cd _build/default && /Users/isabellabaratta/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -I lib/.arith.objs/byte -no-alias-deps -opaque -o lib/.arith.objs/byte/arith.cmo -c -impl lib/arith.ml-gen)
+$ (cd _build/default && /Users/isabellabaratta/.opam/default/bin/ocamldep.opt -modules -impl lib/ds.ml) > _build/default/lib/.arith.objs/arith__Ds.impl.d
+$ (cd _build/default && /Users/isabellabaratta/.opam/default/bin/ocamldep.opt -modules -impl lib/interp.ml) > _build/default/lib/.arith.objs/arith__Interp.impl.d
+$ (cd _build/default && /Users/isabellabaratta/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I lib/.arith.objs/byte -I /Users/isabellabaratta/.opam/default/lib/menhirLib -I /Users/isabellabaratta/.opam/default/lib/parser_plaf -no-alias-deps -opaque -open Arith -o lib/.arith.objs/byte/arith__Ds.cmo -c -impl lib/ds.ml)
+$ (cd _build/default && /Users/isabellabaratta/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -bin-annot -I lib/.arith.objs/byte -I /Users/isabellabaratta/.opam/default/lib/menhirLib -I /Users/isabellabaratta/.opam/default/lib/parser_plaf -no-alias-deps -opaque -open Arith -o lib/.arith.objs/byte/arith__Interp.cmo -c -impl lib/interp.ml)
+$ (cd _build/default && /Users/isabellabaratta/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -warn-error -A -g -a -o lib/arith.cma lib/.arith.objs/byte/arith.cmo lib/.arith.objs/byte/arith__Ds.cmo lib/.arith.objs/byte/arith__Interp.cmo)
+$ (cd _build/default && /Users/isabellabaratta/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -bin-annot -I lib/.utop/.utop.eobjs/byte -I /Users/isabellabaratta/.opam/default/lib/bytes -I /Users/isabellabaratta/.opam/default/lib/findlib -I /Users/isabellabaratta/.opam/default/lib/lambda-term -I /Users/isabellabaratta/.opam/default/lib/logs -I /Users/isabellabaratta/.opam/default/lib/lwt -I /Users/isabellabaratta/.opam/default/lib/lwt/unix -I /Users/isabellabaratta/.opam/default/lib/lwt_react -I /Users/isabellabaratta/.opam/default/lib/menhirLib -I /Users/isabellabaratta/.opam/default/lib/mew -I /Users/isabellabaratta/.opam/default/lib/mew_vi -I /Users/isabellabaratta/.opam/default/lib/ocaml/compiler-libs -I /Users/isabellabaratta/.opam/default/lib/ocaml/threads -I /Users/isabellabaratta/.opam/default/lib/ocaml/unix -I /Users/isabellabaratta/.opam/default/lib/ocplib-endian -I /Users/isabellabaratta/.opam/default/lib/ocplib-endian/bigstring -I /Users/isabellabaratta/.opam/default/lib/parser_plaf -I /Users/isabellabaratta/.opam/default/lib/react -I /Users/isabellabaratta/.opam/default/lib/result -I /Users/isabellabaratta/.opam/default/lib/trie -I /Users/isabellabaratta/.opam/default/lib/uchar -I /Users/isabellabaratta/.opam/default/lib/utop -I /Users/isabellabaratta/.opam/default/lib/uucp -I /Users/isabellabaratta/.opam/default/lib/uuseg -I /Users/isabellabaratta/.opam/default/lib/uutf -I /Users/isabellabaratta/.opam/default/lib/xdg -I /Users/isabellabaratta/.opam/default/lib/zed -I lib/.arith.objs/byte -no-alias-deps -o lib/.utop/.utop.eobjs/byte/dune__exe__Utop.cmo -c -impl lib/.utop/utop.ml-gen)
+$ (cd _build/default && /Users/isabellabaratta/.opam/default/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -o lib/.utop/utop.bc /Users/isabellabaratta/.opam/default/lib/ocaml/compiler-libs/ocamlcommon.cma /Users/isabellabaratta/.opam/default/lib/ocaml/compiler-libs/ocamlbytecomp.cma /Users/isabellabaratta/.opam/default/lib/ocaml/compiler-libs/ocamltoplevel.cma /Users/isabellabaratta/.opam/default/lib/findlib/findlib.cma /Users/isabellabaratta/.opam/default/lib/findlib/findlib_top.cma /Users/isabellabaratta/.opam/default/lib/logs/logs.cma /Users/isabellabaratta/.opam/default/lib/lwt/lwt.cma /Users/isabellabaratta/.opam/default/lib/logs/logs_lwt.cma /Users/isabellabaratta/.opam/default/lib/ocplib-endian/ocplib_endian.cma /Users/isabellabaratta/.opam/default/lib/ocplib-endian/bigstring/ocplib_endian_bigstring.cma /Users/isabellabaratta/.opam/default/lib/ocaml/unix/unix.cma /Users/isabellabaratta/.opam/default/lib/ocaml/threads/threads.cma /Users/isabellabaratta/.opam/default/lib/lwt/unix/lwt_unix.cma -I /Users/isabellabaratta/.opam/default/lib/lwt/../stublibs /Users/isabellabaratta/.opam/default/lib/react/react.cma /Users/isabellabaratta/.opam/default/lib/lwt_react/lwt_react.cma /Users/isabellabaratta/.opam/default/lib/result/result.cma /Users/isabellabaratta/.opam/default/lib/uutf/uutf.cma /Users/isabellabaratta/.opam/default/lib/uucp/uucp.cma /Users/isabellabaratta/.opam/default/lib/uuseg/uuseg.cma /Users/isabellabaratta/.opam/default/lib/zed/zed.cma /Users/isabellabaratta/.opam/default/lib/trie/trie.cma /Users/isabellabaratta/.opam/default/lib/mew/mew.cma /Users/isabellabaratta/.opam/default/lib/mew_vi/mew_vi.cma /Users/isabellabaratta/.opam/default/lib/lambda-term/lambda_term.cma -I /Users/isabellabaratta/.opam/default/lib/lambda-term/../stublibs /Users/isabellabaratta/.opam/default/lib/xdg/xdg.cma -I /Users/isabellabaratta/.opam/default/lib/xdg/../stublibs /Users/isabellabaratta/.opam/default/lib/utop/uTop.cma /Users/isabellabaratta/.opam/default/lib/menhirLib/menhirLib.cma /Users/isabellabaratta/.opam/default/lib/parser_plaf/parser_plaf.cma lib/arith.cma lib/.utop/.utop.eobjs/byte/dune__exe__Utop.cmo -linkall -warn-error -31)
